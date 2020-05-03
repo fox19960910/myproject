@@ -1,0 +1,68 @@
+.portfolio{
+    border:5px solid #fff;
+    img{
+        width:100%;
+        display: block;
+        margin:0 auto;
+    }
+    &-wrap{
+        border:5px solid #fff;
+    }
+}
+.portfolio-text{
+    font-weight: 400;
+    color: #000000;
+    line-height: 0.8;
+   
+    &:not(:last-child){
+        margin-bottom:10rem;
+        @include screen(tab-landscape){
+            margin-bottom:10rem;
+        }
+        @include screen(tab-portrait){
+            margin-bottom:8rem;
+        }
+    }
+    &--sub{
+        font-size:10rem;
+        letter-spacing: 5px;
+        display: block;
+        @include screen(tab-landscape){
+            font-size:8rem;
+        }
+        @include screen(tab-portrait){
+            font-size:6rem;
+        }
+        @include screen(phone){
+            font-size:4rem;
+        }
+    }
+    &--main{
+        font-size:15rem;
+        letter-spacing: 10px;
+        display: block;
+        @include screen(tab-landscape){
+            font-size:10rem;
+        }
+        @include screen(tab-portrait){
+            font-size:8rem;
+        }
+        @include screen(phone){
+            font-size:5rem;
+        }
+    }
+}
+.wrap-text-portfolio{
+    overflow: hidden;
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    padding:10rem 5rem;
+    background:$color-primary;
+    @include screen(tab-landscape){
+        padding: 8rem 4rem;
+    }
+}
+
