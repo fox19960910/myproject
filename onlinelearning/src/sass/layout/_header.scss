@@ -1,0 +1,32 @@
+.header{
+    background-color:#fff;
+    padding:0.5rem 0;
+    &__wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &.vertical{
+        display: none;
+        @include screen(tab-portrait){
+            display: block;
+        }
+    }
+}
+.logo{
+    display: block;
+    @include screen(tab-portrait){
+        display: none;
+    }
+    img{
+        @include img;
+        width:12rem;
+    }
+
+    &--second{
+        display: none;
+        @include screen(tab-portrait){
+            display: block;
+        }
+    }
+}

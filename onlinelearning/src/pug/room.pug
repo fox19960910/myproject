@@ -1,0 +1,133 @@
+doctype html
+include ../include/mixin
++head('Phong hoc',"https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=vietnamese")
+body
+    //header
+    header.header.vertical
+        .container
+            //wrap header
+            .header__wrap
+                a(href="index.html").logo
+                    img(src="../img/logo.png", alt="logo")
+                // navigation header
+                // navigation user, serch, 
+                .nav-action
+                    ul.nav-action__list
+                        //search
+                        li.nav-action__item
+                            .search-form
+                                input(type="text" placeholder="Tim kiem").search-form__input
+                                <i class="fa fa-search search-form__icon" aria-hidden="true"></i>
+
+                        // notify
+                        li.nav-action__item
+                            .notify
+                                <i class="fa fa-bell-o notify__icon" aria-hidden="true"></i>
+                                p.notify__num 10
+                                .notify__table
+                                    
+                                    .notify__table-wrap 
+                                        ul.notify__list
+                                            li.notify__item
+                                                +notify('url(../img/user-avt.jpg)', 'foxLearn Thông báo: ','bạn đã đạt 80 điểm trong bài thi trắc nghiệm HTML','5 phút trước')
+                                            li.notify__item
+                                                +notify('url(../img/user-avt.jpg)', 'foxLearn Thông báo: ','bạn đã đạt 80 điểm trong bài thi trắc nghiệm HTML','5 phút trước')
+                                            li.notify__item
+                                                +notify('url(../img/user-avt.jpg)', 'foxLearn Thông báo: ','bạn đã đạt 80 điểm trong bài thi trắc nghiệm HTML','5 phút trước')
+                                            li.notify__item
+                                                +notify('url(../img/user-avt.jpg)', 'foxLearn Thông báo: ','bạn đã đạt 80 điểm trong bài thi trắc nghiệm HTML','5 phút trước')
+                                            li.notify__item
+                                                +notify('url(../img/user-avt.jpg)', 'foxLearn Thông báo: ','bạn đã đạt 80 điểm trong bài thi trắc nghiệm HTML','5 phút trước')
+                                            li.notify__item
+                                                +notify('url(../img/user-avt.jpg)', 'foxLearn Thông báo: ','bạn đã đạt 80 điểm trong bài thi trắc nghiệm HTML','5 phút trước')
+                                            li.notify__item
+                                                +notify('url(../img/user-avt.jpg)', 'foxLearn Thông báo: ','bạn đã đạt 80 điểm trong bài thi trắc nghiệm HTML','5 phút trước')
+                                            li.notify__item
+                                                +notify('url(../img/user-avt.jpg)', 'foxLearn Thông báo: ','bạn đã đạt 80 điểm trong bài thi trắc nghiệm HTML','5 phút trước')
+                                    .fake(style="position:relative")
+                                        .notify__close Đóng
+                        // user
+                        li.nav-action__item
+                            .user
+                                .user__avt
+                                    img(src="../img/user-avt.jpg", alt="")
+                                p.user__name Tung Le
+                                .user__icon
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                .user__table
+                                    .user__table-head
+                                        .user__table-avt(style="background-image:url(../img/user-avt.jpg)")
+                                        h3.user__table-name Le Xuan Tung 
+                                        p.user__table-date Tham gia vào ngày 20/04/2020
+                                    .user__table-body
+                                        a.user__btn.btn.btn--primary Thông tin
+                                        a.user__btn.btn.btn--primary Điểm số
+                                        a.user__btn.btn.btn--primary Đăng xuất
+    //navigation menu
+    .navigation.vertical
+        .container
+            // navigation on desktop
+            +navigation1('nav-head','Trang chủ','Giới thiệu','Luyện tập', 'Tài nguyên', 'Phòng học', 'liên hệ')
+            .nav-mobile-wrap
+                //logo
+                a(href="index.html").logo.logo--second
+                    img(src="../img/logo.png", alt="logo")
+                // bar button
+                .nav-bar
+                    span.nav-bar__line
+                //navigation responsive
+                +navigation1('nav-responsive','Trang chủ','Giới thiệu','Luyện tập', 'Tài nguyên', 'Phòng học', 'liên hệ')
+    main.main
+        aside.side-bar
+            .btn-hide
+                <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+            .side-fixed
+                .user__table.active.horizontal
+                    .user__table-head.horizontal
+                        .user__table-avt.horizontal(style="background-image:url(../img/user-avt.jpg)")
+                        h3.user__table-name.horizontal Le Xuan Tung 
+                        p.user__table-date.horizontal Tham gia vào ngày 20/04/2020
+                    .user__table-body
+                        a.user__btn.btn.btn--primary Thông tin
+                        a.user__btn.btn.btn--primary Điểm số
+                        a.user__btn.btn.btn--primary Đăng xuất
+                +navigation1('nav-horizontal','Trang chủ','Giới thiệu','Luyện tập', 'Tài nguyên', 'Phòng học', 'liên hệ')
+                .side-footer
+                    h4.footer__title Kết nối với chúng tôi
+                    .footer__item.footer__social
+                        a(href="").footer__social-link
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        a(href="").footer__social-link
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        a(href="").footer__social-link
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        a(href="").footer__social-link
+                            <i class="fa fa-google" aria-hidden="true"></i>
+        article.main-content.u-flex.u-align-item-center.u-justify-content-center
+            .video-live
+                .video-live__main 
+                    .video-live__video 
+                        iframe.video-live__box(src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1")
+                    .video-live__setting 
+                        ul.video-live__list
+                            li.video-live__item Share screen
+                            li.video-live__item 
+                                <i class="fa fa-video-camera" aria-hidden="true"></i>Off Camera
+                            li.video-live__item 
+                                <i class="fa fa-microphone-slash" aria-hidden="true"></i>Mute
+                            li.video-live__item.video-live__num-user
+                                <i class="fa fa-users" aria-hidden="true"></i> 190
+                                
+                .video-live__chat 
+                    .video-live__table
+                        .video-live__message
+                            .video-live__avt(style="background-image:url(../img/user-avt.jpg)")
+                            .video-live__desc Xin chao cac ban
+                    .video-live__chat-input
+                        .video-live__group
+                            input(type="text" placeholder="Chat tại đây ... ").video-live__input 
+                            .video-live__send
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                    
+    .overlay
+    +script("../js/script.js","../js/layout.js","../js/chat.js")

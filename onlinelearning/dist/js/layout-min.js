@@ -1,0 +1,1 @@
+var layout={init:function(){this.btnHide()},btnHide:function(){const t=document.querySelector(".btn-hide"),e=document.querySelector(".side-fixed"),n=document.querySelector(".main-content");t.addEventListener("click",function(t){e.classList.toggle("hide"),n.classList.toggle("full")})}};layout.init();

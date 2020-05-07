@@ -1,0 +1,1 @@
+var period={init:function(){this.getdata()},getdata:function(){const t=document.querySelectorAll(".period");var e=[];t.forEach((i,o)=>{i.addEventListener("click",()=>{e.shift(),e.push(t[o].id),console.log(e),localStorage.setItem("id-period",JSON.stringify(e)),location.replace("period.html")})})}};period.init();

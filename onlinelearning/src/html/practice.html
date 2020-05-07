@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--Head of layout-->
+<!-- mixin notify-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Luyen Tap</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Mali:300,400,500,700|Sedgwick+Ave&amp;display=swap&amp;subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <main class="main">
+    <aside class="side-bar">
+      <div class="btn-hide"><i class="fa fa-angle-double-left" aria-hidden="true"></i></div>
+      <div class="side-fixed">
+        <div class="user__table active horizontal">
+          <div class="user__table-head horizontal">
+            <div class="user__table-avt horizontal" style="background-image:url(../img/user-avt.jpg)"></div>
+            <h3 class="user__table-name horizontal">Le Xuan Tung </h3>
+            <p class="user__table-date horizontal">Tham gia vào ngày 20/04/2020</p>
+          </div>
+          <div class="user__table-body"><a class="user__btn btn btn--primary">Thông tin</a><a class="user__btn btn btn--primary">Điểm số</a><a class="user__btn btn btn--primary">Đăng xuất</a></div>
+        </div>
+        <nav class="nav-horizontal vertical">
+          <div class="nav-horizontal__close"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <ul class="nav-horizontal__list">
+            <li class="nav-horizontal__item"><a class="nav-horizontal__link" href="#">Trang chủ</a></li>
+            <li class="nav-horizontal__item"><a class="nav-horizontal__link" href="#">Giới thiệu</a></li>
+            <li class="nav-horizontal__item"><a class="nav-horizontal__link" href="#">Luyện tập</a></li>
+            <li class="nav-horizontal__item"><a class="nav-horizontal__link" href="#">Tài nguyên</a></li>
+            <li class="nav-horizontal__item"><a class="nav-horizontal__link" href="#">Phòng học</a></li>
+            <li class="nav-horizontal__item"><a class="nav-horizontal__link" href="#">liên hệ</a></li>
+          </ul>
+        </nav>
+        <div class="side-footer">
+          <h4 class="footer__title">Kết nối với chúng tôi</h4>
+          <div class="footer__item footer__social"><a class="footer__social-link" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a><a class="footer__social-link" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="footer__social-link" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a><a class="footer__social-link" href=""><i class="fa fa-google" aria-hidden="true"></i></a></div>
+        </div>
+      </div>
+    </aside>
+    <article class="main-content"> 
+      <div class="container-full u-relative">
+        <div class="door">
+          <div class="row">
+            <div class="col-1-of-3">
+              <div class="door__item"><img class="door__img" src="../img/door.jpg" alt="">
+                <div class="door__start">BẮT ĐẦU</div>
+              </div>
+              <div class="door__des">
+                <div class="door__icon"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
+                <h3 class="door__text">HTML</h3>
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="door__item"><img class="door__img" src="../img/door.jpg" alt="">
+                <div class="door__start">BẮT ĐẦU</div>
+              </div>
+              <div class="door__des">
+                <div class="door__icon"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
+                <h3 class="door__text">CSS</h3>
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="door__item"><img class="door__img" src="../img/door.jpg" alt="">
+                <div class="door__start">BẮT ĐẦU</div>
+              </div>
+              <div class="door__des">
+                <div class="door__icon"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
+                <h3 class="door__text">JAVASCRIPT</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--quiz html-->
+        <div class="quiz"><a class="btn btn--bg-primary quiz__close" href="#">Bỏ cuộc</a>
+          <div class="quiz__header u-margin-top-2">
+            <h3 class="heading-section u-text-color-light u-margin-top-2"> HTML quiz</h3>
+          </div>
+          <div class="quiz__box">
+            <form action="#">
+              <h4 class="quiz__question">HTML có phải là một ngôn ngữ lập trình không?</h4>
+              <div class="quiz__container">
+                <div class="quiz__group">
+                  <input class="quiz__check quiz__checkbox" id="answer1" type="radio" name="answer" value="value1">
+                  <label class="quiz__answer" for="answer1">HTML là một ngôn ngữ lập trình</label>
+                </div>
+                <div class="quiz__group">
+                  <input class="quiz__check quiz__checkbox" id="answer2" type="radio" name="answer" value="value2">
+                  <label class="quiz__answer" for="answer2">HTML là ngôn ngữ giao tiếp của nước Việt Nam </label>
+                </div>
+                <div class="quiz__group">
+                  <input class="quiz__check quiz__checkbox" id="answer3" type="radio" name="answer" value="value3">
+                  <label class="quiz__answer" for="answer3"> HTML là ngôn ngữ đánh dấu siêu văn bản.</label>
+                </div>
+              </div>
+            </form>
+            <div class="quiz__action"><a class="btn btn--bg-primary btnNext" href="#">tiếp theo</a>
+              <p class="paragraph paragraph--big"><span class="quiz__num-of-q"></span> of <span class="quiz__total-of-q"></span> questions</p>
+            </div>
+          </div>
+          <div class="quiz__timing"><span class="quiz__timing-minute"></span><span> : </span><span class="quiz__timing-second"></span></div>
+        </div>
+        <!--quiz css-->
+        <div class="quiz"><a class="btn btn--bg-primary quiz__close" href="#">Bỏ cuộc</a>
+          <div class="quiz__header u-margin-top-2">
+            <h3 class="heading-section u-text-color-light u-margin-top-2"> CSS quiz</h3>
+          </div>
+          <div class="quiz__box">
+            <form action="#">
+              <h4 class="quiz__question">HTML có phải là một ngôn ngữ lập trình không?</h4>
+              <div class="quiz__container">
+                <div class="quiz__group">
+                  <input class="quiz__check quiz__checkbox" id="answer1" type="radio" name="answer" value="value1">
+                  <label class="quiz__answer" for="answer1">HTML là một ngôn ngữ lập trình</label>
+                </div>
+                <div class="quiz__group">
+                  <input class="quiz__check quiz__checkbox" id="answer2" type="radio" name="answer" value="value2">
+                  <label class="quiz__answer" for="answer2">HTML là ngôn ngữ giao tiếp của nước Việt Nam </label>
+                </div>
+                <div class="quiz__group">
+                  <input class="quiz__check quiz__checkbox" id="answer3" type="radio" name="answer" value="value3">
+                  <label class="quiz__answer" for="answer3"> HTML là ngôn ngữ đánh dấu siêu văn bản.</label>
+                </div>
+              </div>
+            </form>
+            <div class="quiz__action"><a class="btn btn--bg-primary btnNext" href="#">tiếp theo</a>
+              <p class="paragraph paragraph--big"><span class="quiz__num-of-q"></span> of <span class="quiz__total-of-q"></span> questions</p>
+            </div>
+          </div>
+          <div class="quiz__timing"><span class="quiz__timing-minute"></span><span> : </span><span class="quiz__timing-second"></span></div>
+        </div>
+        <!-- quiz JS-->
+        <div class="quiz"><a class="btn btn--bg-primary quiz__close" href="#">Bỏ cuộc</a>
+          <div class="quiz__header u-margin-top-2">
+            <h3 class="heading-section u-text-color-light u-margin-top-2"> JAVASCRIPT quiz</h3>
+          </div>
+          <div class="quiz__box">
+            <form action="#">
+              <h4 class="quiz__question">HTML có phải là một ngôn ngữ lập trình không?</h4>
+              <div class="quiz__container">
+                <div class="quiz__group">
+                  <input class="quiz__check quiz__checkbox" id="answer1" type="radio" name="answer" value="value1">
+                  <label class="quiz__answer" for="answer1">HTML là một ngôn ngữ lập trình</label>
+                </div>
+                <div class="quiz__group">
+                  <input class="quiz__check quiz__checkbox" id="answer2" type="radio" name="answer" value="value2">
+                  <label class="quiz__answer" for="answer2">HTML là ngôn ngữ giao tiếp của nước Việt Nam </label>
+                </div>
+                <div class="quiz__group">
+                  <input class="quiz__check quiz__checkbox" id="answer3" type="radio" name="answer" value="value3">
+                  <label class="quiz__answer" for="answer3"> HTML là ngôn ngữ đánh dấu siêu văn bản.</label>
+                </div>
+              </div>
+            </form>
+            <div class="quiz__action"><a class="btn btn--bg-primary btnNext" href="#">tiếp theo</a>
+              <p class="paragraph paragraph--big"><span class="quiz__num-of-q"></span> of <span class="quiz__total-of-q"></span> questions</p>
+            </div>
+          </div>
+          <div class="quiz__timing"><span class="quiz__timing-minute"></span><span> : </span><span class="quiz__timing-second"></span></div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <div class="overlay"></div>
+  <script src="../js/practice.js"></script>
+  <script src="../js/quiz.js"></script>
+  <script src="../js/layout.js"></script>
+</body>

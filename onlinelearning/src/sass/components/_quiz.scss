@@ -1,0 +1,97 @@
+.quiz{
+    background-image: linear-gradient(to right, rgba(#000,0.3),rgba(#000,0.3)), url(../img/classroom.jpg);
+    background-position: center center;
+    background-size:cover;
+
+    position: absolute;
+
+    width:100%;
+    height:100vh;
+    background-color:#f8f8f8;
+    top:0;
+    left:0;
+    z-index:18;
+
+    padding-top:4rem;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: $transition-3s;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    &.fixed{
+        position: fixed;
+    }
+    &__box{
+
+        width: 54%;
+        position: absolute;
+        top: 48%;
+        left: 52%;
+        transform: translate(-50%,-50%);
+       
+        
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        color:#fff;
+    }
+    &__close{
+        position: absolute;
+
+        top:2rem;
+        right:2rem;
+    }
+    &__group{
+        display: flex;
+        align-items: center;
+        &:not(:last-child){
+            margin-bottom:2rem;
+        }
+    }
+    &__question{
+        font-size:2.3rem;
+        margin-bottom:1rem;
+        font-family: 'Sedgwick Ave', cursive;
+    }
+    &__answer{
+        margin-left:2rem;
+        font-size:1.8rem;
+        padding: 1rem 0;
+        font-family: 'Sedgwick Ave', cursive;
+
+        cursor: pointer;
+        &.active{
+            color:#bcbc;
+        }
+    }
+    &__check:checked ~ &__answer{
+        color:#bcbc;
+    }
+    &__header{
+        position: absolute;
+        top:3rem;
+        left:50%;
+        transform:translateX(-50%)
+    }
+
+    &__timing{
+        width:8rem;
+        height:8rem;
+        color:#000;
+        background-color:#fff;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        position: absolute;
+        top:15rem;
+        left:20rem;
+    }
+}

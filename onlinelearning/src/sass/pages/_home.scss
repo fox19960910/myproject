@@ -1,0 +1,36 @@
+.banner{
+    // height:60vh;
+    width:100%;
+    background-image: linear-gradient(to right, rgba(#000,0.7), rgba(#000,0.7)), url(../img/banner.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    
+    padding:20rem 0;
+}
+.section-about{
+    padding:10rem 0;
+    &__img{
+        img{
+            @include img;
+            border:1rem solid #fff;
+            box-shadow: $shadow-light;
+        }
+    }
+}
+.section-practice{
+    padding:10rem 0;
+    background-image: linear-gradient(to right, rgba(#000,0.7), rgba(#000,0.7)), url(../img/practice-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.section-room{
+    padding:10rem 0;
+}
+.section-contact{
+    padding:5rem 0;
+    background-image: linear-gradient(to right, rgba($color-primary,0.7), rgba($color-primary,0.7)), url(../img/contents.png);
+    background-position: center center;
+    background-size:cover;
+}

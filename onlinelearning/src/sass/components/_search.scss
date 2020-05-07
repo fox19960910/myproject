@@ -1,0 +1,26 @@
+.search-form{
+    position: relative;
+    
+    overflow: hidden;
+    &__input{
+        border-radius: 20rem;
+        outline: none;
+        border:thin solid $color-primary-light;
+        padding:1rem 2rem;
+    }
+    &__icon{
+        font-size:2rem;
+        color:#fff;
+        display: block;
+
+        position: absolute;
+        top:50%;
+        transform:translateY(-50%);
+        right:0;
+        background-color:$color-primary;
+        padding:1rem;
+        border-radius:50%;
+        cursor: pointer;
+        
+    }
+}

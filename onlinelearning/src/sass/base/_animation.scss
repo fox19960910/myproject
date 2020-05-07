@@ -1,0 +1,54 @@
+/* KEYFRAME */
+@keyframes moveInLeft{
+    0%{ opacity: 0; transform: translateX(-100px);}
+    80%{transform: translateX(20px)}
+    100%{ opacity: 1;transform: translateX(0);}
+}
+
+@keyframes moveInRight{
+    0%{ opacity: 0; transform: translateX(100px);}
+    80%{transform: translateX(-10px)}
+    100%{ opacity: 1;transform: translateX(0);}
+}
+@keyframes moveInBottom{
+    0%{ opacity: 0; transform: translateY(100px);}
+    100%{ opacity: 1;transform: translateX(0);}
+}
+@keyframes moveInTop{
+    0%{ opacity: 0; transform: translateY(-100px);}
+    100%{ opacity: 1;transform: translateX(0);}
+}
+@keyframes moveIn{
+    0%{ opacity: 1; transform: perspective(7rem) rotateX(50deg) translateY(0);}
+    100%{ opacity: 0;transform: perspective(8rem) rotateX(50deg) translateY(-1rem);}
+}
+@keyframes headingAnimation{
+    0%{opacity: 1;visibility: visible;}
+    50%{height:1px;width:100%}
+    100%{height:100%}
+}
+@keyframes scaleCircle{
+    0%{
+        opacity: 1;
+        width:110%;
+        height:110%;
+    }
+    100%{
+        opacity: 0;
+        width:130%;
+        height:130%;
+    }
+}
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes circleUpDown{
+    from{transform:translateY(0);}
+    to{transform:translateY(1.4rem);}
+}
+
+@keyframes circle{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
+}

@@ -1,0 +1,47 @@
+.main{
+    display:flex;
+}
+.side-bar{
+    // flex: 0 0 20%;
+    // max-width: 20%;
+}
+.side-fixed{
+    position: fixed;
+    height:100%;
+    width:30rem;
+    background-color:#343a40;
+    transition: $transition-3s;
+
+    box-shadow: $shadow-light;
+    z-index:19;
+    @include screen(tab-portrait){
+        display: none;
+    }
+    &.hide{
+        width:0;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}
+.side-footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 2rem;
+}
+.main-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 100vh;
+    padding-left:30rem;
+    transition: $transition-3s;
+    &.full{
+        padding-left:0rem;
+    }
+    @include screen(tab-portrait){
+        padding-left:0;
+    }
+    
+}

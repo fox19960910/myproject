@@ -1,0 +1,76 @@
+.door{
+    background:#444c53;
+    height:100vh;
+    
+
+    padding: 5rem 0;
+
+    &__item{
+        width:60%;
+        margin: 0 auto;
+        background-color:#000;
+        perspective: 300px;
+        -webkit-perspective: 300px;
+
+        position: relative;
+    }   
+    &__img{
+        width:100%;
+        display: block;
+        
+        cursor: pointer;
+       
+        transform:  rotateY(0);
+        transition: $transition-3s;
+        transform-origin: 0% 0%;
+        &.active{
+            transform: rotateY(60deg);
+        }
+    }
+    &__start{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size:3rem;
+        // width:5rem;
+        // height:5rem;
+        color:$color-primary;
+
+        position: absolute;
+        right:1rem;
+        top:50%;
+        transform:translateY(-50%);
+
+        opacity: 0;
+        visibility: hidden;
+        cursor: pointer;
+        transition: 0.3s all;
+
+        &.active{
+            opacity: 1;
+            visibility: visible;
+            
+        }
+        
+    }
+    &__des{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // padding-top:3rem;
+    }
+    
+    &__icon{
+        color:#fff;
+        transform: perspective(8rem) rotateX(50deg);
+        animation: moveIn 1.5s linear infinite;
+        i{
+            font-size:10rem;
+        }
+    }
+    &__text{
+        font-size:3rem;
+        color:$color-primary;
+    }
+}

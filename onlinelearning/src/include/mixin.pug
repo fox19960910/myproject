@@ -1,0 +1,39 @@
+//Head of layout
+mixin head(title,href)
+        head
+                meta(charset="UTF-8")
+                meta(name="viewport" content="width=device-width, initial-scale=1.0")
+                meta(http-equiv="X-UA-Compatible" content="ie=edge")
+                title= title
+                link(rel="stylesheet" href="../css/main.css")
+                link(href=href rel="stylesheet")
+                link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+mixin script(...items)
+        each item in items
+                script(src= item)
+mixin navigation(...items)
+        nav.nav-head
+                ul.nav-head__list
+                        each item, href in items
+                                li.nav-head__item
+                                        a(href= '#').nav-head__link= item
+mixin navigation1(cl,...items)
+        nav(class=cl).vertical
+                div(class=`${cl}__close`) <i class="fa fa-times" aria-hidden="true"></i>
+                ul(class=`${cl}__list`)
+                        each item in items
+                                li(class=`${cl}__item`)
+                                        a(href= '#' class=`${cl}__link`)= item
+
+// mixin notify
+
+mixin notify(link,talk,content,date)
+        .notify__box
+                .notify__avt(style=`background-image:${link}`)
+                .notify__content
+                        p.paragraph.notify__desc
+                                |
+                                span(class="u-text-color-primary u-text-700")= talk
+                                |
+                                =content
+                        p.notify__date= date
